@@ -69,24 +69,24 @@
         </div>
         <h1>Modals</h1>
         <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert小程序</button>
-        <button onclick="showPopup();">Launch Popup</button>
+        <button onclick="showPopup();">Launch Popup启动弹出菜单</button>
 
         <h1>Links</h1>
         <ul>
             <li>
-                <a href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');">Open link within Telegram</a>
+                <a href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');">Open link within Telegram打开Telegram链接</a>
             </li>
             <li>
-                <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');">Open link in external browser</a>
+                <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');">Open link in external browser在外部浏览器中打开链接</a>
             </li>
             <li>
-                <a href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});">Open link inside Telegram webview</a>
+                <a href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});">Open link inside Telegram webview打开Telegram网络视图内的链接</a>
             </li>
         </ul>
 
-        <h1>Buttons</h1>
-        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
-        <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <h1>Buttons按钮</h1>
+        <button onclick="Telegram.WebApp.expand();">Expand Webview展开Webview</button>
+        <button onclick="toggleMainButton();">Toggle Main Button切换主按钮</button>
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
