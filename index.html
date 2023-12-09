@@ -68,7 +68,7 @@
             <a href="https://ton.org/"><img width="48" src="./assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
         <h1>Modals</h1>
-        <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert小程序</button>
+        <button onclick="Telegram.WebApp.showAlert('Hello World!你好');">Launch Alert小程序</button>
         <button onclick="showPopup();">Launch Popup启动弹出菜单</button>
 
         <h1>Links</h1>
@@ -113,11 +113,11 @@
         // Function to call showPopup API
         function showPopup() {
             Telegram.WebApp.showPopup({
-                title: 'Title',
-                message: 'Some message',
+                title: 'Title标题',
+                message: 'Some message信息',
                 buttons: [
                     {id: 'link', type: 'default', text: 'Open ton.org'},
-                    {type: 'cancel'},
+                    {type: 'cancel取消'},
                 ]
             }, function(btn) {
                 if (btn === 'link') {
